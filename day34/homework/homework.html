@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f3eb;
+            margin: 0;
+            height: 100vh;
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .image-container {
+            width: 100%;
+            height: 200px;
+            background-image: url('Screenshot 2024-11-23 at 16.40.17.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d8659;
+            margin-bottom: 20px;
+        }
+        .button { 
+            display: inline-block;
+            background-color: #2d8659;
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            
+        }
+        .button:hover {
+            background-color: #256d47;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-container"></div>
+        <div class="content">
+            <div class="title">Gabrielle Essence Eau De Parfum</div>
+            <div class="description">
+                A floral and sophisticated fragrance inspired by Gabrielle Chanel. A luxurious creation for lovers of classic scents.
+            </div>
+            <div class="price">$113.99</div>
+            <a href="#" class="button">Add to Cart</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

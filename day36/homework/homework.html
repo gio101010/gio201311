@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Table Header</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0093E9, #80D0C7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.table-container {
+    width: 60%;
+    max-width: 800px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Change %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Australian Company</td>
+                    <td>$1.38</td>
+                    <td>+0.01</td>
+                    <td>0.36%</td>
+                </tr>
+                <tr>
+                    <td>Aurenco</td>
+                    <td>$2.38</td>
+                    <td>+0.01</td>
+                    <td>1.36%</td>
+                </tr>
+                <tr>
+                    <td>Areilane</td>
+                    <td>$1.87</td>
+                    <td>+0.05</td>
+                    <td>2.35%</td>
+                </tr>
+                <tr>
+                    <td>Aditya Birla</td>
+                    <td>$2.01</td>
+                    <td>+0.02</td>
+                    <td>1.00%</td>
+                </tr>
+                <tr>
+                    <td>Australian Company</td>
+                    <td>$1.38</td>
+                    <td>-0.01</td>
+                    <td>-0.36%</td>
+                </tr>
+                <tr>
+                    <td>Aurenco</td>
+                    <td>$2.38</td>
+                    <td>-0.01</td>
+                    <td>-1.36%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

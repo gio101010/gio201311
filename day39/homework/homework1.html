@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to bottom, #ff4081, #e040fb);
+        font-family: Arial, sans-serif;
+    }
+    .login-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        text-align: center;
+    }
+    .login-container h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .tab-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .tab-buttons button {
+        width: 48%;
+        padding: 10px;
+        background-color: #d81b60;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .tab-buttons button.active {
+        background-color: #e040fb;
+    }
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .login-container a {
+        color: #d81b60;
+        font-size: 12px;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+    }
+    .login-container button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #d81b60;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .login-container .signup-link {
+        font-size: 12px;
+        color: #333;
+    }
+    .login-container .signup-link a {
+        color: #d81b60;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Login Form</h2>
+    <div class="tab-buttons">
+        <button class="active">Login</button>
+        <button>Signup</button>
+    </div>
+    <form>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <a href="#">Forgot password?</a>
+        <button type="submit">Login</button>
+    </form>
+    <p class="signup-link">Not a member? <a href="#">Signup now</a></p>
+</div>
+</body>
+</html>
